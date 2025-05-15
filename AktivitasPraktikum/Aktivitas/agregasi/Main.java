@@ -31,8 +31,8 @@ class Universitas {
 public class Main {
     
     public static void main(String[] args) {
-        Mahasiswa mhs1 = new Mahasiswa("radit");
-        Mahasiswa mhs2 = new Mahasiswa("bandit");
+        Mahasiswa mhs1 = new Mahasiswa("Hilmi");
+        Mahasiswa mhs2 = new Mahasiswa("khoir");
 
         Universitas uper = new Universitas("Universitas Pertamina");
         uper.tambahMahasiswa(mhs1);
