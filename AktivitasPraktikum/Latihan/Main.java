@@ -1,7 +1,7 @@
 package Aktivitas.Latihan;
 import java.util.Date;
 
-// Komposisi: HealthRecord
+//komposisi
 class HealthRecord {
     private String recordNumber;
     private Date creationDate;
@@ -20,7 +20,7 @@ class HealthRecord {
     }
 }
 
-// Superclass: Animal
+//superclass
 abstract class Animal {
     protected HealthRecord healthRecord;
 
@@ -35,7 +35,7 @@ abstract class Animal {
     public abstract void makeSound();
 }
 
-// Subclass: Dog
+//subclass = dog
 class Dog extends Animal {
     public Dog(String recordNumber) {
         super(recordNumber);
@@ -47,7 +47,7 @@ class Dog extends Animal {
     }
 }
 
-// Subclass: Cat
+//subclass = cat
 class Cat extends Animal {
     public Cat(String recordNumber) {
         super(recordNumber);
@@ -59,7 +59,7 @@ class Cat extends Animal {
     }
 }
 
-// HAS-A (Agregasi): Owner
+//HAS-A agregasi
 class Owner {
     private String name;
     private Animal pet;
@@ -89,14 +89,11 @@ class Owner {
     }
 }
 
-// Main Program
 public class Main {
     public static void main(String[] args) {
-        // Buat 2 pemilik dan hewan peliharaannya
         Owner owner1 = new Owner("Budi", new Dog("DOG12345"));
         Owner owner2 = new Owner("Siti", new Cat("CAT67890"));
 
-        // Tampilkan informasi
         owner1.showInfo();
         owner2.showInfo();
     }
